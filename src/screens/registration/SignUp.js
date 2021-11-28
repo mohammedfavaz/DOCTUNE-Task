@@ -33,9 +33,9 @@ export default function SignUp({navigation}) {
     return (
         <View style={{ alignItems: "center" }}>
             <Text style={{ marginTop: 50 }}>SIGN UP</Text>
-            <TextInput style={{ height: 50, width: "70%", backgroundColor: "#f1e4fa", marginTop: 10 }} value={Data.name} onChangeText={(val) => setData(pre => ({ ...pre, name: val }))} placeholder="Name"></TextInput>
-            <TextInput style={{ height: 50, width: "70%", backgroundColor: "#f1e4fa", marginTop: 10 }} value={Data.email} onChangeText={(val) => setData(pre => ({ ...pre, email: val }))} keyboardType="email-address" placeholder="Email"></TextInput>
-            <TextInput style={{ height: 50, width: "70%", backgroundColor: "#f1e4fa", marginTop: 10 }} value={Data.password} onChangeText={(val) => setData(pre => ({ ...pre, password: val }))} placeholder="Password"></TextInput>
+            <TextInput style={{ height: 50, width: "70%", backgroundColor: "#f1e4fa", marginTop: 10,borderRadius:5 }} value={Data.name} onChangeText={(val) => setData(pre => ({ ...pre, name: val }))} placeholder="Name"></TextInput>
+            <TextInput style={{ height: 50, width: "70%", backgroundColor: "#f1e4fa", marginTop: 10,borderRadius:5 }} value={Data.email} onChangeText={(val) => setData(pre => ({ ...pre, email: val }))} keyboardType="email-address" placeholder="Email"></TextInput>
+            <TextInput style={{ height: 50, width: "70%", backgroundColor: "#f1e4fa", marginTop: 10,borderRadius:5 }} value={Data.password} onChangeText={(val) => setData(pre => ({ ...pre, password: val }))} placeholder="Password"></TextInput>
             <TouchableOpacity style={{ height: 50, width: "70%", backgroundColor: "#ff1", borderRadius: 10, marginTop: 20, justifyContent: "center", alignItems: "center" }} onPress={() => { checkingUser() }}>
                 <Text>SIGN UP</Text>
             </TouchableOpacity>
